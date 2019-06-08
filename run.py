@@ -1,4 +1,5 @@
 import csv
+import numpy as np
 
 # CSVファイルを読み込んでdataという配列に格納する
 with open('l_knee_angles_formatted.csv') as f:
