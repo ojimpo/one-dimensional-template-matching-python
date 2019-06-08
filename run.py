@@ -22,12 +22,15 @@ score = []
 # テンプレートと同じ長さのデータを, 元データの最初から最後まで順番に取り出していく
 calcdata = []
 for calc in range(dlength):
-    print(calc)
+    calcdata.append(data[calc])
+    if len(calcdata) == tlength:
+        break
 for i in template:
-    print()
+    print(i)
 # 取り出したものとテンプレート間で, すべての値の絶対値の差を求める
 # 全ての桁の差を足し合わせ、それをスコアとする
 # スコアが一番小さかった部分が一致度が最も高い. そんインデックスを出力する
 
+print(calcdata)
 print(template)
 print(data[-1])
