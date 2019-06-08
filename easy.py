@@ -3,8 +3,6 @@ import numpy as np
 data = [1, 1, 4, 5, 1, 4, 8, 1, 0, 1, 9, 1, 9]
 template = [8, 1, 0]
 
-# print(template)
-
 diffScores = []
 
 for i in range(0, len(data), len(template)):
