@@ -2,10 +2,12 @@ import csv
 import numpy as np
 
 # CSVファイルを読み込んでdataという配列に格納する
-with open('l_knee_angles_formatted.csv') as f:
-    data = f.read().splitlines()
+with open('l_knee_angles.csv') as f:
+    data = f.read().split(',')
 
+# data配列の最初の0を削除する
 # data配列の一部をliceを用いて切り出してテンプレートとする
+data = data[50:]
 template = data[30:60]
 
 # 配列内の要素の型をint型に変換する
